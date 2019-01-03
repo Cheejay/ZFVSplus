@@ -1,0 +1,110 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"uglifyFileName": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.4.3",
+	"appid": "wx6b18a02c5cc6ec3c",
+	"projectname": "zhyzzhijie",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 3,
+			"list": [
+				{
+					"id": 0,
+					"name": "另一个你",
+					"pathName": "pages/core/birth/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "身份认证",
+					"pathName": "pages/account/register/index",
+					"query": ""
+				},
+				{
+					"id": 3,
+					"name": "Test",
+					"pathName": "pages/feedback/index",
+					"query": ""
+				},
+				{
+					"id": 4,
+					"name": "老用户",
+					"pathName": "pages/core/login/login",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "登录",
+					"pathName": "pages/core/login/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "学分",
+					"pathName": "pages/search/credit/today",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "成绩查询",
+					"pathName": "pages/search/table/today",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "新首页",
+					"pathName": "pages/new/index",
+					"query": ""
+				},
+				{
+					"id": 9,
+					"name": "新的身份认证",
+					"pathName": "pages/newAccount/register/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "积分",
+					"pathName": "pages/jifen/jifen",
+					"query": ""
+				},
+				{
+					"id": 11,
+					"name": "首次登录",
+					"pathName": "pages/tucao/index",
+					"query": ""
+				}
+			]
+		}
+	}
+}

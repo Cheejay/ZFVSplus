@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/more/index",
+    "pages/search/table/today",
+    "pages/search/credit/today",
+    "pages/account/register/index",
+    "pages/newAccount/register/index",
+    "pages/jifen/jifen",
+    "pages/core/table/index",
+    "pages/core/birth/index",
+    "pages/core/login/index",
+    "pages/core/login/login",
+    "pages/new/index",
+    "pages/first/index",
+    "pages/feedback/index",
+    "pages/ranklist/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#408FF7",
+    "backgroundColor": "#408FF7",
+    "navigationBarTitleText": "珠海一职+",
+    "navigationBarTextStyle": "white",
+    "backgroundTextStyle": "light"
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wx8abaf00ee8c3202e"
+  ]
+}

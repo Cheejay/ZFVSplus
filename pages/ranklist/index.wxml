@@ -1,0 +1,9 @@
+<!--pages/ranklist/index.wxml-->
+ <view style="background-color:#408FF7;height:50px;color:white;padding:10px 20px;font-size:35rpx"  class="" hover-class="none" hover-stop-propagation="false">
+   德育积分系统排行榜
+   <i-row style="font-size:12px">
+    <i-col span="24" i-class="col-class">*本排行榜数据每天凌晨0点更新一次</i-col>
+    <view hidden="1"><i-col span="10" i-class="col-class" >2017-2018第一学期</i-col></view>
+    <view hidden="1"><i-col span="6" i-class="col-class" >绩点：50分</i-col></view>
+  </i-row>
+ </view>

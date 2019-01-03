@@ -1,0 +1,15 @@
+{
+  "name": "chen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "vant-weapp": "^0.5.0-beta"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "\\"
+  },
+  "author": "",
+  "license": "ISC"
+}

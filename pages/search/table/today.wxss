@@ -1,0 +1,138 @@
+page, .page, .page__bd {
+  height: 100%;
+  background-color: #f8f8f8;
+}
+
+.page__bd {
+  padding-bottom: 0;
+}
+
+.weui-navbar {
+  position: static;
+  background-color: #fff;
+}
+
+.weui-tab__panel {
+  padding-top: 0;
+}
+
+.weui-media-box__title {
+  color: #43b0d1;
+  font-size: 26rpx;
+}
+
+.weui-media-box {
+  padding: 20rpx;
+  margin-top: 20rpx;
+  position: relative;
+  background-color: #fff;
+}
+
+.weui-media-box__info {
+  color: #000;
+  line-height: 1.6;
+}
+
+.weui-media-box__bold {
+  font-size: 30rpx;
+  font-weight: bolder;
+}
+
+text + .weui-media-box__bold {
+  display: block;
+  padding-top: 40rpx;
+}
+
+.weui-media-box__bold + text {
+  float: right;
+}
+
+.weui-media-box:before {
+  content: none;
+}
+
+.button-sp-area {
+  padding: 20rpx 35rpx;
+}
+
+button[type="primary"][plain] {
+  color: #fff;
+  border: 1px solid #96deda;
+  background-image: linear-gradient(-45deg, #96deda 0%, #8ec5fc 100%);
+}
+
+.button-hover[type="primary"][plain] {
+  color: #fff;
+  border-color: #96deda;
+  opacity: 0.6;
+}
+
+button[type="default"][plain] {
+  color: #fff;
+  border: 1px solid #fbc2eb;
+  background-image: linear-gradient(-45deg, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+.zan-capsule {
+  display: inline-block;
+  font-size: 12px;
+  vertical-align: middle;
+  line-height: 19px;
+}
+
+.zan-capsule__left2, .zan-capsule__left, .zan-capsule__right {
+  display: inline-block;
+  line-height: 17px;
+  height: 19px;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.zan-capsule__left {
+  padding: 0 2px;
+  color: #fff;
+  background: #999;
+  border-radius: 2px 0 0 2px;
+  border: 1rpx solid #999;
+}
+
+
+.zan-capsule__right {
+  padding: 0 5px;
+  text-align: center;
+  color: #999;
+  border-radius: 0 2px 2px 0;
+  border: 1rpx solid #999;
+}
+
+
+.button-hover[type="default"][plain] {
+  color: #fff;
+  border-color: #fbc2eb;
+  opacity: 0.6;
+}
+
+.souce{
+  right:3%;
+  bottom:35%;
+  position:absolute;
+}
+.souce2{
+  width:3rem;
+  text-align:center;
+  color:#25c6fc;
+  font-size:1.2rem;
+  right:3%;
+  bottom:30%;
+  position:absolute;
+}
+.center{
+  position:relative;
+}
+
+.small{
+  font-size:0.6rem;
+  bottom:0.1rem;
+  position:absolute;
+}
+

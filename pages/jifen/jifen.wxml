@@ -1,0 +1,109 @@
+<!-- jifen.wxml
+<web-view src="https://xqhz.lzj.im/jifen/jifen/#/login/?id={{numid}}" /> -->
+
+<view class='jifen'>
+<view class="space">
+<view class="planet">
+    <view class='fenshu'>
+      78<text style='font-size:4vw;'>分</text>
+    </view>
+</view>
+<view class="stars">
+    <view class="star"></view>
+    <view class="star pink"></view>
+    <view class="star blue"></view>
+    <view class="star yellow"></view>
+</view>
+</view>
+<view class="i-sticky-demo">
+    <i-sticky scrollTop="{{scrollTop}}">
+        <i-sticky-item i-class="i-sticky-demo-title">
+            <view class='jiefenti' slot="title">
+                逻辑层
+            </view>
+            <view slot="content" style='background:blue;'>
+
+            <view class='left' style='display: inline;'>
+          
+                <view class="i-sticky-demo-item">
+                    <view class='icon-look'>
+                    <view style='height:10vw;'>
+                        <van-icon name="star" class='icon-if' size='9vw'/>
+                        <view class='ifcon-text'>+60分</view>
+                    </view>
+                        <view class='ifcon-contest' >
+                        原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差</view>
+                    </view>
+              </view>
+                <view class="i-sticky-demo-item">
+                    <view class='icon-look'>
+                    <view style='height:10vw;'>
+                        <van-icon name="star" class='icon-if' size='9vw'/>
+                        <view class='ifcon-text'>+60分</view>
+                    </view>
+                        <view class='ifcon-contest' >
+                        原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差</view>
+                    </view>
+              </view>
+                <view class="i-sticky-demo-item">
+                    <view class='icon-look'>
+                    <view style='height:10vw;'>
+                        <van-icon name="star" class='icon-if' size='9vw'/>
+                        <view class='ifcon-text'>+60分</view>
+                    </view>
+                        <view class='ifcon-contest' >
+                        原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差</view>
+                    </view>
+              </view>
+                <view class="i-sticky-demo-item">
+                    <view class='icon-look'>
+                    <view style='height:10vw;'>
+                        <van-icon name="star" class='icon-if' size='9vw'/>
+                        <view class='ifcon-text'>+60分</view>
+                    </view>
+                        <view class='ifcon-contest' >
+                        原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差</view>
+                    </view>
+              </view>
+                <view class="i-sticky-demo-item">
+                    <view class='icon-look'>
+                    <view style='height:10vw;'>
+                        <van-icon name="star" class='icon-if' size='9vw'/>
+                        <view class='ifcon-text'>+60分</view>
+                    </view>
+                        <view class='ifcon-contest' >
+                        原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差</view>
+                    </view>
+              </view>
+              
+            </view>
+
+            <view class='left'>
+                <view class="i-sticky-demo-item">
+                    <view class='icon-look'>
+                    <view style='height:10vw;'>
+                        <van-icon name="star" class='icon-if' size='9vw'/>
+                        <view class='ifcon-text'>+60分</view>
+                    </view>
+                        <view class='ifcon-contest' >
+                        原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差</view>
+                    </view>
+              </view>
+                <view class="i-sticky-demo-item">
+                    <view class='icon-look'>
+                    <view style='height:10vw;'>
+                        <van-icon name="star" class='icon-if' size='9vw'/>
+                        <view class='ifcon-text'>+60分</view>
+                    </view>
+                        <view class='ifcon-contest' >
+                        原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差</view>
+                    </view>
+              </view>
+            </view>
+
+
+            </view>
+        </i-sticky-item>
+    </i-sticky>
+</view>
+</view>

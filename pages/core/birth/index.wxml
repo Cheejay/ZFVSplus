@@ -1,0 +1,41 @@
+<view class="page__hd">
+  <view class="page__title">另一个你</view>
+  <view class="page__desc">查找本校和你同年同月同日出生的那个小伙伴</view>
+
+</view>
+<view class="page__bd">
+  <view class="weui-cells">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">ID</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入你的学号" value="{{bookName}}" bindinput="bookNameInput" />
+      </view>
+    </view>
+  </view>
+  <view class="button-sp-area">
+    <button bindtap="search" class="weui-btn" type="primary" plain="true">查询</button>
+  </view>
+  <view class="weui-panel" wx:if="{{info}}">
+    <view class="weui-panel__hd">和你同年同月同日生的小伙伴</view>
+    <view class="weui-panel__bd">
+      <navigator url="." class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active" wx:for="{{info.data}}" wx:key="*this" wx:for-item="book">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+          {{book[4]}}
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="weui-media-box__title">{{book[1]}}</view>
+          <view class="weui-media-box__desc">{{book[3]}}</view>
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="zan-capsule zan-capsule" style="float:right;">
+            <view class="zan-capsule__left">班级</view>
+            <view wx:if="{{book[4]%2==0}}" class="zan-capsule__right">{{book[0]}}</view>
+            <view wx:else class="zan-capsule__right" style="color:#408FF7">{{book[0]}}</view>
+          </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>

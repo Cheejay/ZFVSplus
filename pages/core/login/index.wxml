@@ -1,0 +1,29 @@
+<view class="circle">
+  <view class="page__hd">
+    <image class="weui-media-box__thumb" src="/images/login.png" style='padding-bottom:5px;' />
+    <view class="page__title">统一认证</view>
+    <view class="page__desc">请使用珠海一职统一认证系统账号</view>
+  </view>
+</view>
+
+<view class="page__bd" style='padding:0 1rem'>
+  <view class="weui-cells">
+    <view class="weui-cell weui-cell_input " >
+      <view class="weui-cell__hd">
+        <view class="weui-label">ID</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入你的学号" value="{{stuNUM}}" bindinput="stuNUMInput" />
+      </view>
+    </view>
+  </view>
+  <view class="button-sp-area">
+    <button bindtap="search" class="weui-btn" type="primary" plain="true" style='font-size:40rpx;' >下一步</button>
+    <button bindtap="search" class="weui-btn" type="primary" plain="true" style='font-size:40rpx;' >扫描校卡条形码</button>
+  </view>
+
+  <view class="weui-panel" style="position:fixed;bottom:1px;">
+    <view class="weui-panel__hd">忘记密码？</view>
+    <view class="weui-panel__bd"></view>
+  </view>
+</view>

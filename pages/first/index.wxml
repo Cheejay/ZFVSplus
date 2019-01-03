@@ -1,0 +1,5 @@
+<!--pages/first/index.wxml-->
+<view class="" style="height:400rpx;background-color:#04be02;color:white" hover-class="none" hover-stop-propagation="false">
+    珠海一职+为内部小程序
+</view>
+  

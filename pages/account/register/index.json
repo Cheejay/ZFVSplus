@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "身份认证系统",
+  "usingComponents": {
+    "i-input": "../../../dist/input/index"
+  }
+}

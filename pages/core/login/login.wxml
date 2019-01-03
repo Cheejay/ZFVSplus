@@ -1,0 +1,62 @@
+<view class="circle">
+  <view class="page__hd">
+    <image class="weui-media-box__thumb" src="/images/login.png" style='padding-bottom:5px;' />
+    <view class="page__title">统一认证</view>
+    <view class="page__desc">162010021</view>
+  </view>
+</view>
+
+<view class="page__bd" style='padding:0 1rem'>
+<block>
+  <view class="weui-media-box weui-media-box_text">   
+    <view class="weui-media-box__desc">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">班级</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" value="RJ181" bindinput="classNameInput" />
+          </view>
+        </view>
+
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">姓名</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" value="廖某" bindinput="classNameInput" />
+          </view>
+        </view>
+
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">学号</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" value="162010021" bindinput="classNameInput" />
+          </view>
+        </view>
+      </view>
+    </view>
+</block>
+  <view class="weui-cells">
+    <view class="weui-cell weui-cell_input " >
+      <view class="weui-cell__hd">
+        <view class="weui-label">密码</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入密码" value="{{stuNUM}}" bindinput="stuNUMInput" />
+      </view>
+    </view>
+  </view>
+  <view class="button-sp-area">
+    <button bindtap="search" class="weui-btn" type="primary" plain="true" style='font-size:40rpx;' >登录</button>
+  </view>  
+  <view class="button-sp-area">
+    <button bindtap="test" class="weui-btn" type="primary" plain="true" style='font-size:40rpx;' >指纹登录</button>
+  </view>
+  <view class="weui-panel">
+    <view class="weui-panel__hd">忘记密码？</view>
+    <view class="weui-panel__bd"></view>
+  </view>
+</view>

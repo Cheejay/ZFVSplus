@@ -1,0 +1,52 @@
+<view class="page__bd">
+
+  <view class="weui-tab">
+    <view class="weui-navbar">
+    </view>
+<block>
+
+</block>
+<view class="weui-tab__panel">
+<view class="weui-tab__content"  style="padding:5px 10px">
+<view style='text-align:center;color:#626C83'>应获学分:{{credit['LL']}}分 当前实获学分:{{credit['HD']}}分</view>
+<view class="progress-item">
+    <i-progress percent="{{(credit['HD']/credit['LL'])*100}}" status="active" hide-info></i-progress>
+</view>
+<view style='text-align:center' class="weui-media-box__title weui-media-box__title_in-text">下面是你的学分明细</view>
+
+<view class="weui-media-box weui-media-box_text" style='border-top:6rpx dotted #25c6fc'>
+<view class="weui-media-box__title weui-media-box__title_in-text">说明</view>
+<view class="weui-media-box__info">
+<view>
+    
+<text>下面为你目前所有学期（不包括社团、实习）的学分，凡课程前面用红色标注学分缺失的即该门课未拿到学分。</text>
+</view>
+</view>
+</view>
+
+
+<block wx:for="{{credit[0]}}" wx:for-item="c" wx:key="index" >
+<view class="weui-media-box weui-media-box_text" style='border-top:6rpx dotted #25c6fc'>
+<view class="weui-media-box__title weui-media-box__title_in-text">{{c.name}} | {{c.TYPE}} 学分{{c.LL}}分</view>
+<view class="weui-media-box__info">
+<view>
+    
+<text><text style="color:red" wx:if="{{c.LL != c.HD}}">【学分缺失】</text>{{c.KC}}</text>
+</view>
+  <block >
+
+      <view class="zan-capsule zan-capsule souce" style="float:right;">
+                  <view class="zan-capsule__left" style="background-color:#408FF7;border:#408FF7">获得</view>
+                  <view class="zan-capsule__right" style="color:#408FF7">{{c.HD}}</view>
+                  <view class="zan-capsule__left" style="border-radius: 0 2px 2px 0;">分</view>
+                </view>
+    </block>
+  </view>
+</view>
+</block>
+</view>
+       
+      
+    </view>
+  </view>
+</view>

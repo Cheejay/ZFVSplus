@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "身份认证系统",
+  "usingComponents": {
+    "i-input": "../../../dist/input/index",
+    "i-icon": "../../../dist/icon/index",
+    "i-button": "../../../dist/button/index",
+    "van-steps": "/miniprogram_npm/vant-weapp/steps/index",
+    "van-button": "/miniprogram_npm/vant-weapp/button/index"
+  }
+}

@@ -1,0 +1,93 @@
+<view class="circle">
+  <view class="page__hd">
+    <image class="weui-media-box__thumb" src="/images/core/lib.png" />
+    <view class="page__title">身份认证</view>
+    <view class="page__desc">部分查询功能需进行身份验证</view>
+ </view>
+ <view class='set_body'>
+  <view class='set_Wheelplanting'>
+      <view class='set_look' wx:if='{{active==0}}'>
+      <view id="stars"></view>
+          <text class='set_page_title'>欢迎到来！</text>
+          <text class='set_page__desc'>
+            按时打卡圣诞节卡上看见的
+          </text>
+          <view style='height:60vw;'>
+            <view class="space">
+            <view class="planet">
+                <view class="crater1"></view>
+                <view class="crater2"></view>
+                <view class="crater3"></view>
+                <view class="crater4"></view>
+            </view>
+            <view class="stars">
+                <view class="star"></view>
+                <view class="star pink"></view>
+                <view class="star blue"></view>
+                <view class="star yellow"></view>
+            </view>
+          </view>
+          <view style='text-align:center;'>
+             <van-button type="default" class='vanbutton ' bindtap='actives' round>开始吧</van-button>
+          </view>
+</view>
+      </view>
+      <view class='set_look' wx:elif='{{active==1}}'>
+          <i-icon type="tailor" size='80'/>
+            <text style='font-size:5.6vw'>扫描校卡上的条形码</text>
+            <view class="container" bindtap='scan'>
+            <view class="info"></view>
+            </view>
+            <view class='info-text'>请点击下面认证</view>
+            <view class='info-text2'>白卡用户？</view>
+      </view>
+      <view class='set_look' wx:elif='{{active==2}}'>
+          <view class='info-text' style='margin-bottom:2vw;'>
+            绑定手机认证
+          </view>
+          <view>
+            <i-panel title="认证">
+              <i-input value='{{ value1 }}'  title="手机号" autofocus placeholder="输入你的手机号" />
+              <i-input value='{{ value1 }}'  title="&邮箱" autofocus placeholder="输入你的邮箱" />
+              
+            </i-panel>
+            <view style='text-align:center'>
+              <van-button type="default" class='vanbutton' bindtap='actives' round>确认绑定</van-button>
+            </view>
+          </view>
+      </view>
+      <view class='set_look' wx:elif='{{active==3}}'>
+          <view class='info-text' style='margin-bottom:2vw;'>
+            填写个人密码
+          </view>
+          <i-panel title="认证">
+              <i-input value='{{ value1 }}'  title="输入密码" autofocus placeholder="输入密码" />
+              <i-input value='{{ value1 }}'  title="再次输入密码" autofocus placeholder="再次输入密码" />
+          </i-panel>
+          <view style='text-align:center'>
+              <van-button type="default" class='vanbutton' bindtap='actives' round>确认绑定</van-button>
+          </view>
+      </view>
+      <view class='set_look' wx:elif='{{active==4}}'>
+          <view class='info-text'>
+          <image src='/images/core/renz.png' style='width:100%;height:88vw;opacity:0.8;border-radius:2vw'/>
+            
+            <van-button type="default" class='vanbutton ibutton' bindtap='actives' round>开始使用</van-button>
+          </view>
+      </view>
+  </view>
+  <view class='set_index'>
+       <van-steps
+        active-color='#408FF7'
+        steps="{{ steps }}"
+        active="{{ active }}"
+      />
+    </view>
+ </view>
+<van-button type="default" class='vanbutton ' bindtap='actives' round>开始吧</van-button>
+ <!-- <!-- <view class="header">
+	<view class="wrapper">
+		
+	</view>
+</view> -->
+</view>
