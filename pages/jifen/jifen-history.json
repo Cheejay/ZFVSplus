@@ -1,9 +1,8 @@
 {
-  "enablePullDownRefresh": true,
   "usingComponents": {
     "i-sticky": "../../../dist/sticky/index",
     "i-sticky-item": "../../../dist/sticky-item/index",
-    "i-icon": "../../../dist/icon/index",
-    "van-icon": "/miniprogram_npm/vant-weapp/icon/index"
+    "i-icon": "../../../dist/icon/index"
+  
   }
 }

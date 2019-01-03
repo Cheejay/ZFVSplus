@@ -33,6 +33,7 @@ Page({
     })
   },
   getTable: function (id) {
+    console.log('get table')
     var that = this
     var numberid = that.data.numid
     api.getTable({
@@ -43,7 +44,7 @@ Page({
         let listData = res.data
         if (listData.status == '1') {
           wx.showModal({
-            content: '抱歉，未查询到当前学分信息',
+            content: '抱歉，未查询到当前成绩信息',
             showCancel: false,
             complete: function () {
               wx.navigateBack({

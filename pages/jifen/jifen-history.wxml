@@ -1,0 +1,67 @@
+<!--pages/jifen/jifen-history.wxml-->
+<view class='jifen-history'>
+<view class="i-sticky-demo">
+    <i-sticky scrollTop="120">
+        <i-sticky-item i-class="i-sticky-demo-title">
+
+            <view slot="content">
+                <view class="i-sticky-demo-item">
+                  <i-icon type="browse" size='20' />
+                  <p>操作类型</p>
+                  <text>考评操作</text>
+                </view>
+
+            
+                <view class="i-sticky-demo-item">
+                  <i-icon type="addressbook_fill" size='20'/>
+                  <p>操作者</p>
+                  <text>考评操作</text>
+                </view>
+
+                <view class="i-sticky-demo-item">
+                  <i-icon type="addressbook" size='20'/>
+                  <p>被操作者</p>
+                  <text>考评操作</text>
+                </view>
+
+                <view class="i-sticky-demo-item">
+                  <i-icon type="group_fill" size='20'/>
+                  <p>被操作班级</p>
+                  <text>考评操作</text>
+                </view>
+
+                <view class="i-sticky-demo-item">
+                  <i-icon type="document" size='20'/>
+                  <p>内容</p>
+                  <text>考评操作</text>
+                </view>
+
+                <view class="i-sticky-demo-item">
+                  <i-icon type="add" size='20'/>
+                  <p>加减个人分数</p>
+                  <text>考评操作</text>
+                </view>
+
+                <view class="i-sticky-demo-item">
+                  <i-icon type="add" size='20'/>
+                  <p>加减班级分数</p>
+                  <text>考评操作</text>
+                </view>
+
+                <view class="i-sticky-demo-item">
+                  <i-icon type="time" size='20'/>
+                  <p>操作时间</p>
+                  <text>考评操作</text>
+                </view>
+
+                <view class="i-sticky-demo-item">
+                  <i-icon type="time_fill" size='20'/>
+                  <p>操作提交</p>
+                  <text>考评操作</text>
+                </view>
+                
+            </view>
+        </i-sticky-item>
+    </i-sticky>
+</view>
+</view>

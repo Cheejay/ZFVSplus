@@ -8,18 +8,15 @@ Page({
     imgUrls: [
       {
          link:'/pages/index/index',
-        url:'http://10.11.124.121/9.jpg' 
+        url:'http://10.11.124.121/1.jpg' 
       },{
          link:'/pages/logs/logs',
-        url:'http://10.11.124.121/9.jpg' 
+        url:'http://10.11.124.121/1.jpg' 
       },{
          link:'/pages/test/test',
-        url:'http://10.11.124.121/9.jpg' 
+        url:'http://10.11.124.121/1.jpg' 
       } 
    ],
-   extraData:{
-    id:'51042'
-   },
    Navi: [
     {
        link:'/pages/index/index',
@@ -45,6 +42,8 @@ Page({
    interval: 5000,
    duration: 1000,
    userInfo: {},
+   //图片地址
+   imgList: ['http://127.0.0.1/1.jpg', 'http://127.0.0.1/1.jpg', 'http://127.0.0.1/1.jpg', 'http://127.0.0.1/1.jpg'],
    //是否采用衔接滑动  
    circular: true,
    //是否显示画板指示点  
@@ -89,7 +88,7 @@ Page({
    */
   onLoad: function (options) {
     wx.setNavigationBarTitle({
-      title: '和乐校园'
+      title: '珠海一职+'
     })
     
   },

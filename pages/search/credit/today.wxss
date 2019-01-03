@@ -134,6 +134,4 @@ button[type="default"][plain] {
   bottom:0.1rem;
   position:absolute;
 }
-.progress-item {
-  padding:0
-}
+

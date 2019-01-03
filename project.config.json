@@ -5,13 +5,12 @@
 		"es6": true,
 		"postcss": true,
 		"minified": true,
-		"newFeature": true,
-		"uglifyFileName": true
+		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.4.3",
+	"libVersion": "2.4.1",
 	"appid": "wx6b18a02c5cc6ec3c",
-	"projectname": "zhyzzhijie",
+	"projectname": "ux",
 	"condition": {
 		"search": {
 			"current": -1,
@@ -30,7 +29,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 3,
+			"current": 10,
 			"list": [
 				{
 					"id": 0,
@@ -53,7 +52,7 @@
 				{
 					"id": 3,
 					"name": "Test",
-					"pathName": "pages/feedback/index",
+					"pathName": "pages/search/table/today",
 					"query": ""
 				},
 				{
@@ -95,14 +94,7 @@
 				{
 					"id": -1,
 					"name": "积分",
-					"pathName": "pages/jifen/jifen",
-					"query": ""
-				},
-				{
-					"id": 11,
-					"name": "首次登录",
-					"pathName": "pages/tucao/index",
-					"query": ""
+					"pathName": "pages/jifen/jifen"
 				}
 			]
 		}

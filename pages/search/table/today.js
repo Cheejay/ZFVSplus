@@ -7,14 +7,8 @@ Page({
    */
   data: {
     listData: '',
-    activeNames: [],
     tabs: ["第一学期", "第二学期", "第三学期", "第四学期"],
     activeIndex: 5
-  },
-  onChange(event) {
-    this.setData({
-      activeNames: event.detail
-    });
   },
   tabClick: function (e) {
     console.log('Tab click!')

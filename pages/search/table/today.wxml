@@ -21,24 +21,8 @@
     <view class='credit' wx:if="{{listData.xuefen}}">
 <view style="padding-top:3px;color:#409eff">本学期课程学分:{{listData.xuefen}}</view>
  </view>
- <view style="background-color:#408FF7;height:50px;color:white;padding:10px 20px;font-size:35rpx"  class="" hover-class="none" hover-stop-propagation="false">
-   成绩单
-   <i-row style="font-size:12px">
-    <i-col span="8" i-class="col-class">162010021 廖某</i-col>
-    <view hidden="{{activeIndex == 5}}"><i-col span="10" i-class="col-class" >2017-2018第一学期</i-col></view>
-    <view hidden="{{activeIndex == 5}}"><i-col span="6" i-class="col-class" >绩点：50分</i-col></view>
-  </i-row>
- </view>
-   
- <view style="padding:0 10px">
- <van-collapse bind:change="onChange" value="{{ activeNames }}" >
       <view class="weui-tab__content" hidden="{{activeIndex != k}}" wx:for-index="k" wx:for="{{tabs}}" wx:key="k_key">
         <block wx:for="{{listData}}" wx:for-item="i" wx:key="index">
-          <van-collapse-item name="{{index}}" value="{{i['ZP']}}分">
-              <view slot="title">{{i['KC']}}<van-icon name="question-o" /></view>
-              <text>平时成绩:{{i['PS']}}分  期中成绩:{{i['QZ']}}分   期末成绩:{{i['QM']}}分</text>
-          </van-collapse-item>
-        <!--
           <view class="weui-media-box weui-media-box_text" style='border-top:1rpx solid #25c6fc'>
             <view class="weui-media-box__title weui-media-box__title_in-text">{{i['KC']}}</view>
             <view class="weui-media-box__info">
@@ -59,12 +43,10 @@
               </block>
             </view>
           </view>
-         -->
         </block>
       </view>
-  </van-collapse>
-  </view>
 <view class="weui-tab__content" hidden="{{activeIndex != 5}}" style="padding:5px 10px">
+<view style='text-align:center'>点击上方学期按钮进行查询</view>
 <view style='text-align:center' class="weui-media-box__title weui-media-box__title_in-text">下面是你的奖励学分</view>
 
 

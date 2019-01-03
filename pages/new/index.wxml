@@ -36,7 +36,7 @@
     <i-row>
         <i-col span="6" i-class="col-class">
         <navigator url="/pages/account/register/index"  hover-class="weui-grid_active" class="list">
-          <image class="weui-grid__icon" src="/images/tabbar/login.png" />
+          <image class="weui-grid__icon" src="/images/tabbar/room.png" />
           <view class="weui-grid__label">身份认证</view>
         </navigator>
         </i-col>
@@ -49,7 +49,7 @@
         <i-col span="6" i-class="col-class">
         <navigator url="/pages/search/credit/today"  hover-class="weui-grid_active" class="list">
           <image class="weui-grid__icon" src="/images/tabbar/sys.png" />
-          <view class="weui-grid__label">学分查询</view>
+          <view class="weui-grid__label">学分检查</view>
         </navigator>
         </i-col>
         <i-col span="6" i-class="col-class">
@@ -62,31 +62,26 @@
     <i-row>
         <i-col span="6" i-class="col-class">
         <navigator url="/pages/jifen/jifen"  hover-class="weui-grid_active" class="list">
-          <image class="weui-grid__icon" src="/images/tabbar/jifen.png" />
-          <view class="weui-grid__label">和乐校园系统</view>
+          <image class="weui-grid__icon" src="/images/tabbar/room.png" />
+          <view class="weui-grid__label">积分系统</view>
         </navigator>
         </i-col>
         <i-col span="6" i-class="col-class">
-        <navigator url="/pages/ranklist/index"  hover-class="weui-grid_active" class="list">
-          <image class="weui-grid__icon" src="/images/tabbar/rank.png" />
-          <view class="weui-grid__label">积分排行榜</view>
+        <navigator url="/pages/jifen/options"  hover-class="weui-grid_active" class="list">
+          <image class="weui-grid__icon" src="/images/tabbar/table.png" />
+          <view class="weui-grid__label">我的操作</view>
         </navigator>
         </i-col>
         <i-col span="6" i-class="col-class">
-        <navigator url="/pages/jifen/jifen"  hover-class="weui-grid_active" class="list">
-          <image class="weui-grid__icon" src="/images/tabbar/tools.png" />
-          <view class="weui-grid__label">随机抽人</view>
+        <navigator url="/pages/search/credit/today"  hover-class="weui-grid_active" class="list">
+          <image class="weui-grid__icon" src="/images/tabbar/sys.png" />
+          <view class="weui-grid__label">学分检查</view>
         </navigator>
         </i-col>
         <i-col span="6" i-class="col-class">
-        <navigator
-        target="miniProgram"
-        open-type="navigate"
-        app-id="wx8abaf00ee8c3202e"
-        extra-data="{{ extraData }}"
-        version="release" hover-class="weui-grid_active" class="list">
-          <image class="weui-grid__icon" src="/images/tabbar/help.png" />
-          <view class="weui-grid__label">帮助中心</view>
+        <navigator url="/pages/core/birth/index"  hover-class="weui-grid_active" class="list">
+          <image class="weui-grid__icon" src="/images/tabbar/lib.png" />
+          <view class="weui-grid__label">另一个你</view>
         </navigator>
         </i-col>
     </i-row>
@@ -119,14 +114,7 @@
     <swiper indicator-dots="{{indicatorDots}}" vertical="{{vertical}}" autoplay="{{autoplay}}" duration="{{duration}}" interval='{{interval}}' bindchange="bindchange"  circular="{{circular}}" style="height:{{imgheights[current]}}rpx;">
     <block wx:for='{{imgUrls}}' wx:key="{{index}}">
       <swiper-item>
-      <navigator 
-       target="miniProgram"
-        open-type="navigate"
-        app-id="wx8abaf00ee8c3202e"
-        extra-data="{{ extraData }}"
-        version="release"
-        hover-class="navigator-hover"
-      >
+      <navigator url="{{item.link}}" hover-class="navigator-hover">
         <image src="{{item.url}}" data-id='{{index}}' class="slide-image" mode="widthFix" bindload="imageLoad"/>
         </navigator>
       </swiper-item>
@@ -139,9 +127,9 @@
 
 <block wx:if="{{studentid !== 'none'}}">
 <view class="weui-panel card">
-<view class="weui-panel__hd" style='background-color:#f17c67'>
+<view class="weui-panel__hd" style='background-color:#ffc09f'>
     <image style="height:32rpx;width:32rpx;vertical-align:middle;margin-right:16rpx" src="/images/jifen.png" />
-    <text style='color:white'>和乐校园-德育分</text>
+    <text style='color:white'>德育积分</text>
 </view>
 <block>
     <view class="weui-panel__bd bg bg2" >

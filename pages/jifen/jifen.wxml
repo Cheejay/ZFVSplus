@@ -3,107 +3,228 @@
 
 <view class='jifen'>
 <view class="space">
-<view class="planet">
-    <view class='fenshu'>
-      78<text style='font-size:4vw;'>分</text>
-    </view>
+  <view class='bigti' style='{{num2}}'>
+    <view class='boll'></view>
+  </view>
+  <view class="planet" style='{{num}}'>
+      <view class='fenshu'>
+        78<text style='font-size:4vw;'>分</text>
+        <view style='font-size:4vw;margin-left:1vw' bindtap='chen'>当前积分</view>
+      </view>
+
 </view>
-<view class="stars">
-    <view class="star"></view>
-    <view class="star pink"></view>
-    <view class="star blue"></view>
-    <view class="star yellow"></view>
 </view>
-</view>
-<view class="i-sticky-demo">
+<view class="i-sticky-demo" style='{{vtop}}'>
     <i-sticky scrollTop="{{scrollTop}}">
         <i-sticky-item i-class="i-sticky-demo-title">
-            <view class='jiefenti' slot="title">
-                逻辑层
+            <view class='jiefenti' slot="title" id='jies'>
+                个人操作--点击下列即可内容详细
             </view>
-            <view slot="content" style='background:blue;'>
-
-            <view class='left' style='display: inline;'>
-          
-                <view class="i-sticky-demo-item">
+            <view class='jiefentis' slot="title"  style='{{top}}'>
+                回到顶部下拉--即可查看积分球
+            </view>
+            <view slot="content">
+              <navigator url="/pages/jifen/jifen-history"  hover-class="weui-grid_active" class="list">
+                <view class="i-sticky-demo-item" >
                     <view class='icon-look'>
                     <view style='height:10vw;'>
-                        <van-icon name="star" class='icon-if' size='9vw'/>
+                        <van-icon name="star-o" class='icon-if' size='9vw'/>
                         <view class='ifcon-text'>+60分</view>
                     </view>
                         <view class='ifcon-contest' >
                         原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差</view>
                     </view>
+                    <view class='ifcon-content-ts' >操作：点击查看内容详情</view>
               </view>
-                <view class="i-sticky-demo-item">
-                    <view class='icon-look'>
-                    <view style='height:10vw;'>
-                        <van-icon name="star" class='icon-if' size='9vw'/>
-                        <view class='ifcon-text'>+60分</view>
-                    </view>
-                        <view class='ifcon-contest' >
-                        原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差</view>
-                    </view>
-              </view>
-                <view class="i-sticky-demo-item">
-                    <view class='icon-look'>
-                    <view style='height:10vw;'>
-                        <van-icon name="star" class='icon-if' size='9vw'/>
-                        <view class='ifcon-text'>+60分</view>
-                    </view>
-                        <view class='ifcon-contest' >
-                        原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差</view>
-                    </view>
-              </view>
-                <view class="i-sticky-demo-item">
-                    <view class='icon-look'>
-                    <view style='height:10vw;'>
-                        <van-icon name="star" class='icon-if' size='9vw'/>
-                        <view class='ifcon-text'>+60分</view>
-                    </view>
-                        <view class='ifcon-contest' >
-                        原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差</view>
-                    </view>
-              </view>
-                <view class="i-sticky-demo-item">
-                    <view class='icon-look'>
-                    <view style='height:10vw;'>
-                        <van-icon name="star" class='icon-if' size='9vw'/>
-                        <view class='ifcon-text'>+60分</view>
-                    </view>
-                        <view class='ifcon-contest' >
-                        原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差</view>
-                    </view>
-              </view>
+              </navigator>
               
-            </view>
-
-            <view class='left'>
-                <view class="i-sticky-demo-item">
+              <navigator url="/pages/jifen/jifen-history"  hover-class="weui-grid_active" class="list">
+                <view class="i-sticky-demo-item" >
                     <view class='icon-look'>
                     <view style='height:10vw;'>
-                        <van-icon name="star" class='icon-if' size='9vw'/>
+                        <van-icon name="star-o" class='icon-if' size='9vw'/>
                         <view class='ifcon-text'>+60分</view>
                     </view>
                         <view class='ifcon-contest' >
-                        原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差</view>
+                        原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差</view>
                     </view>
+                    <view class='ifcon-content-ts' >操作：点击查看内容详情</view>
               </view>
-                <view class="i-sticky-demo-item">
+              </navigator>
+              <navigator url="/pages/jifen/jifen-history"  hover-class="weui-grid_active" class="list">
+                <view class="i-sticky-demo-item" >
                     <view class='icon-look'>
                     <view style='height:10vw;'>
-                        <van-icon name="star" class='icon-if' size='9vw'/>
+                        <van-icon name="star-o" class='icon-if' size='9vw'/>
                         <view class='ifcon-text'>+60分</view>
                     </view>
                         <view class='ifcon-contest' >
-                        原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差</view>
+                        原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差</view>
                     </view>
+                    <view class='ifcon-content-ts' >操作：点击查看内容详情</view>
               </view>
-            </view>
+              </navigator>
+              <navigator url="/pages/jifen/jifen-history"  hover-class="weui-grid_active" class="list">
+                <view class="i-sticky-demo-item" >
+                    <view class='icon-look'>
+                    <view style='height:10vw;'>
+                        <van-icon name="star-o" class='icon-if' size='9vw'/>
+                        <view class='ifcon-text'>+60分</view>
+                    </view>
+                        <view class='ifcon-contest' >
+                        原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差</view>
+                    </view>
+                    <view class='ifcon-content-ts' >操作：点击查看内容详情</view>
+              </view>
+              </navigator>
+              <navigator url="/pages/jifen/jifen-history"  hover-class="weui-grid_active" class="list">
+                <view class="i-sticky-demo-item" >
+                    <view class='icon-look'>
+                    <view style='height:10vw;'>
+                        <van-icon name="star-o" class='icon-if' size='9vw'/>
+                        <view class='ifcon-text'>+60分</view>
+                    </view>
+                        <view class='ifcon-contest' >
+                        原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差</view>
+                    </view>
+                    <view class='ifcon-content-ts' >操作：点击查看内容详情</view>
+              </view>
+              </navigator>
+              <navigator url="/pages/jifen/jifen-history"  hover-class="weui-grid_active" class="list">
+                <view class="i-sticky-demo-item" >
+                    <view class='icon-look'>
+                    <view style='height:10vw;'>
+                        <van-icon name="star-o" class='icon-if' size='9vw'/>
+                        <view class='ifcon-text'>+60分</view>
+                    </view>
+                        <view class='ifcon-contest' >
+                        原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差</view>
+                    </view>
+                    <view class='ifcon-content-ts' >操作：点击查看内容详情</view>
+              </view>
+              </navigator>
+              <navigator url="/pages/jifen/jifen-history"  hover-class="weui-grid_active" class="list">
+                <view class="i-sticky-demo-item" >
+                    <view class='icon-look'>
+                    <view style='height:10vw;'>
+                        <van-icon name="star-o" class='icon-if' size='9vw'/>
+                        <view class='ifcon-text'>+60分</view>
+                    </view>
+                        <view class='ifcon-contest' >
+                        原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差</view>
+                    </view>
+                    <view class='ifcon-content-ts' >操作：点击查看内容详情</view>
+              </view>
+              </navigator>
+              <navigator url="/pages/jifen/jifen-history"  hover-class="weui-grid_active" class="list">
+                <view class="i-sticky-demo-item" >
+                    <view class='icon-look'>
+                    <view style='height:10vw;'>
+                        <van-icon name="star-o" class='icon-if' size='9vw'/>
+                        <view class='ifcon-text'>+60分</view>
+                    </view>
+                        <view class='ifcon-contest' >
+                        原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差</view>
+                    </view>
+                    <view class='ifcon-content-ts' >操作：点击查看内容详情</view>
+              </view>
+              </navigator>
+              <navigator url="/pages/jifen/jifen-history"  hover-class="weui-grid_active" class="list">
+                <view class="i-sticky-demo-item" >
+                    <view class='icon-look'>
+                    <view style='height:10vw;'>
+                        <van-icon name="star-o" class='icon-if' size='9vw'/>
+                        <view class='ifcon-text'>+60分</view>
+                    </view>
+                        <view class='ifcon-contest' >
+                        原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差</view>
+                    </view>
+                    <view class='ifcon-content-ts' >操作：点击查看内容详情</view>
+              </view>
+              </navigator>
+              <navigator url="/pages/jifen/jifen-history"  hover-class="weui-grid_active" class="list">
+                <view class="i-sticky-demo-item" >
+                    <view class='icon-look'>
+                    <view style='height:10vw;'>
+                        <van-icon name="star-o" class='icon-if' size='9vw'/>
+                        <view class='ifcon-text'>+60分</view>
+                    </view>
+                        <view class='ifcon-contest' >
+                        原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差</view>
+                    </view>
+                    <view class='ifcon-content-ts' >操作：点击查看内容详情</view>
+              </view>
+              </navigator>
+              <navigator url="/pages/jifen/jifen-history"  hover-class="weui-grid_active" class="list">
+                <view class="i-sticky-demo-item" >
+                    <view class='icon-look'>
+                    <view style='height:10vw;'>
+                        <van-icon name="star-o" class='icon-if' size='9vw'/>
+                        <view class='ifcon-text'>+60分</view>
+                    </view>
+                        <view class='ifcon-contest' >
+                        原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差</view>
+                    </view>
+                    <view class='ifcon-content-ts' >操作：点击查看内容详情</view>
+              </view>
+              </navigator>
+              <navigator url="/pages/jifen/jifen-history"  hover-class="weui-grid_active" class="list">
+                <view class="i-sticky-demo-item" >
+                    <view class='icon-look'>
+                    <view style='height:10vw;'>
+                        <van-icon name="star-o" class='icon-if' size='9vw'/>
+                        <view class='ifcon-text'>+60分</view>
+                    </view>
+                        <view class='ifcon-contest' >
+                        原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差</view>
+                    </view>
+                    <view class='ifcon-content-ts' >操作：点击查看内容详情</view>
+              </view>
+              </navigator>
+              <navigator url="/pages/jifen/jifen-history"  hover-class="weui-grid_active" class="list">
+                <view class="i-sticky-demo-item" >
+                    <view class='icon-look'>
+                    <view style='height:10vw;'>
+                        <van-icon name="star-o" class='icon-if' size='9vw'/>
+                        <view class='ifcon-text'>+60分</view>
+                    </view>
+                        <view class='ifcon-contest' >
+                        原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差</view>
+                    </view>
+                    <view class='ifcon-content-ts' >操作：点击查看内容详情</view>
+              </view>
+              </navigator>
+              <navigator url="/pages/jifen/jifen-history"  hover-class="weui-grid_active" class="list">
+                <view class="i-sticky-demo-item" >
+                    <view class='icon-look'>
+                    <view style='height:10vw;'>
+                        <van-icon name="star-o" class='icon-if' size='9vw'/>
+                        <view class='ifcon-text'>+60分</view>
+                    </view>
+                        <view class='ifcon-contest' >
+                        原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差</view>
+                    </view>
+                    <view class='ifcon-content-ts' >操作：点击查看内容详情</view>
+              </view>
+              </navigator>
 
-
-            </view>
+              <navigator url="/pages/jifen/jifen-history"  hover-class="weui-grid_active" class="list">
+                <view class="i-sticky-demo-item" >
+                    <view class='icon-look'>
+                    <view style='height:10vw;'>
+                        <van-icon name="star-o" class='icon-if' size='9vw'/>
+                        <view class='ifcon-text'>+60分</view>
+                    </view>
+                        <view class='ifcon-contest' >
+                        原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差原因：被子差差差差被子差差差差被子差差差差</view>
+                    </view>
+                    <view class='ifcon-content-ts' >操作：点击查看内容详情</view>
+              </view>
+              </navigator>
+              </view>     
         </i-sticky-item>
     </i-sticky>
+
+
 </view>
 </view>

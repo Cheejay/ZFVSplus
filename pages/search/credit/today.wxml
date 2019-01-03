@@ -6,12 +6,36 @@
 <block>
 
 </block>
-<view class="weui-tab__panel">
+    <view class="weui-tab__panel">
+    <view class='credit' wx:if="{{listData.xuefen}}">
+<view style="padding-top:3px;color:#409eff">本学期课程学分:{{listData.xuefen}}</view>
+ </view>
+      <view class="weui-tab__content" hidden="{{activeIndex != k}}" wx:for-index="k" wx:for="{{tabs}}" wx:key="k_key">
+        <block wx:for="{{listData}}" wx:for-item="i" wx:key="index">
+          <view class="weui-media-box weui-media-box_text" style='border-top:1rpx solid #25c6fc'>
+            <view class="weui-media-box__title weui-media-box__title_in-text">{{i['KC']}}</view>
+            <view class="weui-media-box__info">
+       <block> 
+              <block>
+                <view >
+                <text>平时成绩:{{i['PS']}}  期中成绩:{{i['QZ']}}   期末成绩:{{i['QM']}}</text>
+                </view>
+               <view>
+                </view>
+
+                <view class="zan-capsule zan-capsule souce" style="float:right;">
+                  <view class="zan-capsule__left">总分</view>
+                  <view class="zan-capsule__right" style="color:#408FF7">{{i['ZP']}}</view>
+                </view>
+
+               </block>
+              </block>
+            </view>
+          </view>
+        </block>
+      </view>
 <view class="weui-tab__content"  style="padding:5px 10px">
 <view style='text-align:center;color:#626C83'>应获学分:{{credit['LL']}}分 当前实获学分:{{credit['HD']}}分</view>
-<view class="progress-item">
-    <i-progress percent="{{(credit['HD']/credit['LL'])*100}}" status="active" hide-info></i-progress>
-</view>
 <view style='text-align:center' class="weui-media-box__title weui-media-box__title_in-text">下面是你的学分明细</view>
 
 <view class="weui-media-box weui-media-box_text" style='border-top:6rpx dotted #25c6fc'>
